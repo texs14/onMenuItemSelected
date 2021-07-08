@@ -1,0 +1,11 @@
+mixin card-of-room(imgUrl, number, price, numbStars, isLux, numbReviews)
+  .card-of-room
+    img.card-of-room__img(src=imgUrl)
+    .card-of-room__wrapper-top
+      span.card-of-room__number №#{number}
+        if (isLux)
+            span.card-of-room__lux люкс
+      span.card-of-room__price #{price} ₽ в сутки
+    .card-of-room__wrapper-top
+      //+stars(numbStars)
+      span.card-of-room__reviews #{numbReviews} отзывов
