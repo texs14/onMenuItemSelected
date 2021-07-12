@@ -1,0 +1,5 @@
+mixin color-block(title, colorNumber, opacity= "1")
+  .color-block
+    .color-block__block(style= {background: colorNumber, opacity: opacity})
+    p.color-block__title #{title}  <br/>
+      span.color-block__color-number= colorNumber
