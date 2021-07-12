@@ -1,4 +1,5 @@
 include ./blocks/card-of-room/card-of-room.pug
+include  ./blocks/color-block/color-block.pug
 
 doctype html
 html(lang="ru")
@@ -7,4 +8,12 @@ html(lang="ru")
     meta(name= 'viewport', content= 'initial-scale=1.0, width=device-width')
     title= title
   body
-    +card-of-room('https://nesidimdoma-club.ru/images/2019/03/01/s1200-7.jpg', 888, 2000, 5, true)
+    .color-block-wrapper
+      +color-block("Dark Shade 100%", "#1F2041")
+      +color-block("Dark Shade 75%", "#1F2041", '.75')
+      +color-block("Dark Shade 25%", "#1F2041", '.25')
+      +color-block("Dark Shade 5%", "#1F2041", '.05')
+      +color-block("Purple", "#BC9CFF")
+      +color-block("Green", "#6FCF97")
+    .h-wrapper
+      
