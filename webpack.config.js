@@ -25,12 +25,17 @@ module.exports = {
 
     plugins: [
         new HtmlWebpackPlugin({
-            template: path.relative(__dirname, './src/index.pug')
+            filename: "index.html",
+            template: path.relative(__dirname, './src/index.pug'),
+        }),
+        new HtmlWebpackPlugin({
+            filename: "pages/ui-kit--colors-and-type.html",
+            template: path.relative(__dirname, './src/pages/ui-kit/colors-and-type/colors-and-type.pug'),
         }),
         new CleanWebpackPlugin(),
         new webpack.HotModuleReplacementPlugin(),
         new MiniCssExtractPlugin({
-            filename: '[name].css'
+            filename: '[name].css',
         }),
 
     ],
@@ -55,9 +60,6 @@ module.exports = {
             {
                 test: /\.pug$/,
                 loader: 'pug-loader',
-                options: {
-                    pretty: true
-                }
             },
             // шрифты
             {
@@ -68,10 +70,9 @@ module.exports = {
             {
                 test: /\.(png|jpg|gif|ico|svg)$/,
                 use: [
-                    'file-loader?name=./images/[name].[ext]',
+                    `file-loader?name=images/[name].[ext]`,
                     {
                         loader: 'image-webpack-loader',
-                        options: {}
                     },
                 ]
             },
