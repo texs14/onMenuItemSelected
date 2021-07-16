@@ -1,0 +1,25 @@
+extends ../../../pug/templates/base
+include ../../../blocks/card-of-room/card-of-room
+include  ../../../blocks/color-block/color-block
+include ../../../blocks/title-block/title-block
+
+block title
+  title= "Colors & type"
+
+block content
+  main.colors-and-type
+    .color-block-wrapper
+      +color-block("Dark Shade 100%", "#1F2041")
+      +color-block("Dark Shade 75%", "#1F2041", '.75')
+      +color-block("Dark Shade 25%", "#1F2041", '.25')
+      +color-block("Dark Shade 5%", "#1F2041", '.05')
+      +color-block("Purple", "#BC9CFF")
+      +color-block("Green", "#6FCF97")
+    .h-wrapper
+      +title('h1', 24, 'This one is the sub-section or\n' +
+      '    widget title')
+      +title('h2', 19, 'Next one is the item title inside\n' +
+      '    widgets')
+      +title('h3', 12, 'This is a label or CTA text')
+      +title('body', 14, 'This is the body text which is used for most\n' +
+      '    of the design, like paragraphs, lists, etc.', "title-block__title_text_paragraph")

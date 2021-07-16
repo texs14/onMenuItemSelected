@@ -1,0 +1,19 @@
+.colors-and-type {
+  display: flex;
+
+  justify-content: space-between;
+
+  margin: 0 150px;
+}
+
+.h-wrapper {
+  display: flex;
+  flex-flow: column;
+
+  .title-block {
+    margin-bottom: 50px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
