@@ -1,0 +1,25 @@
+$primary-text-color: #1F2041;
+$second-text-color: #BC9CFF;
+$primary-ui-color: #BC9CFF;
+$second-ui-color: #6FCF97;
+
+@mixin primary-font-view ($opacity: 1, $isBold: false) {
+  color: $primary-text-color;
+  opacity: $opacity;
+  @if $isBold == false {
+    font-family: Montserrat-Regular;
+  } @if $isBold == true {
+    font-family: Montserrat-Bold;
+  }
+}
+
+@mixin title ($tag: h3) {
+  @include primary-font-view(1, true);
+  @if $tag == h1 {
+    font-size: 24px;
+  } @if $tag == h2 {
+    font-size: 19px;
+  } @if $tag == h3 {
+    font-size: 12px;
+  }
+}
