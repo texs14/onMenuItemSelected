@@ -1,19 +1,7 @@
-include ./blocks/card-of-room/card-of-room.pug
-include  ./blocks/color-block/color-block.pug
-
 doctype html
-html(lang="ru")
+html
   head
-    meta(charset = 'utf-8')
-    meta(name= 'viewport', content= 'initial-scale=1.0, width=device-width')
-    title= title
+    meta(charset="utf-8")
+    title Ex
   body
-    .color-block-wrapper
-      +color-block("Dark Shade 100%", "#1F2041")
-      +color-block("Dark Shade 75%", "#1F2041", '.75')
-      +color-block("Dark Shade 25%", "#1F2041", '.25')
-      +color-block("Dark Shade 5%", "#1F2041", '.05')
-      +color-block("Purple", "#BC9CFF")
-      +color-block("Green", "#6FCF97")
-    .h-wrapper
-      
+    img(src= require('./assets/images/logo.png').default alt= "logo")
