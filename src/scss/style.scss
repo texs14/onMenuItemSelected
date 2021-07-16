@@ -1,2 +1,13 @@
+@import "./vars.scss";
+
+@import "./normalize.scss";
+@import "../assets/fonts/fonts.scss";
+
+@import "./templates.scss";
+
+@import "../pages/ui-kit/colors-and-type/colors-and-type.scss";
+
 @import "../blocks/color-block/color-block.scss";
 @import "../blocks/card-of-room/card-of-room.scss";
+@import "../blocks/title-block/title-block";
+
