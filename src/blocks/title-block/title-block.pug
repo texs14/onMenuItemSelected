@@ -1,0 +1,18 @@
+mixin title(header, size, title, className= "")
+  -tag = header
+  -header = header[0].toUpperCase() + header.slice(1)
+
+  case tag
+    when "h1"
+    when "h2"
+    when "h3"
+    when "h4"
+    when "h5"
+    when "h6"
+      .title-block
+        span(style={"font-size": size + "px"}).title-block__header #{header}
+        #{tag}(style= {"font-size": size + "px", } class= "title-block__title" + className) #{title}
+    default
+      .title-block
+        span(style={"font-size": size + "px"}).title-block__header #{header}
+        p(style= {"font-size": size + "px"} class= "title-block__title " + className) #{title}

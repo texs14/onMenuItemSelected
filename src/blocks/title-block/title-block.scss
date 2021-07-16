@@ -1,0 +1,29 @@
+.title-block {
+
+  display: flex;
+  justify-self: start;
+  align-items: center;
+
+  max-width: 450px;
+
+  &__header {
+
+    min-width: 50px;
+
+    margin-bottom: auto;
+    margin-right: 30px;
+
+    text-align: right;
+
+  }
+
+  &__title {
+    &_text_paragraph {
+      display: inline-block;
+
+      @include primary-font-view(.5);
+
+      max-width: 310px;
+    }
+  }
+}
