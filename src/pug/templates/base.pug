@@ -1,0 +1,11 @@
+doctype html
+html(lang="ru")
+  head
+    include ../includes/head
+    block title
+      title= title
+
+  body
+    header.header-base
+      img(src= require('../../../assets/images/logo.png').default  alt= "logo").header-base__logo
+    block content
