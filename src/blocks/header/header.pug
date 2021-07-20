@@ -1,0 +1,16 @@
+include ../logo/logo
+include ../nav-menu/nav-menu
+
+mixin header(menu, isLogin = false, nickname = "")
+  if isLogin
+    header.header
+      +logo-site()
+      +nav-menu(menu)
+      span.header__nickname= nickname
+  else
+    header.header
+      +logo-site()
+      +nav-menu(menu)
+      .header__wrapper-button
+        a.header__buttton-login войти
+        a.header__button-singup  зарегитстрироваться

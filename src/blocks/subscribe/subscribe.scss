@@ -1,0 +1,94 @@
+.subscribe {
+  &__title {
+    margin-bottom: 20px;
+  }
+
+  &__paragraph {
+    @include primary-font-view(.75);
+    max-width: 260px;
+    margin-bottom: 20px;
+  }
+
+  &__lable {
+    display: block;
+
+    position: relative;
+
+    height: 44px;
+    width: 260px;
+  }
+
+  &__input {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    z-index: 1;
+
+    box-sizing: border-box;
+
+
+    padding: 12px 0 8px 15px;
+
+    @include primary-font-view(.25);
+
+    border: 1px solid rgba(31, 32, 65, 0.25);
+    border-radius: 4px;
+  }
+
+  &__button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 2;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 44px;
+    height: 44px;
+
+    background: none;
+    border: none;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  &__button-arrow {
+    position: relative;
+
+    width: 20px;
+    height: 3px;
+
+    background: $primary-ui-color;
+
+    &:before, &:after {
+      content: "";
+      display: block;
+
+      position: absolute;
+      right: -3px;
+
+      width: 15px;
+      height: 3px;
+
+      background: $primary-ui-color;
+    }
+
+    &:before {
+      transform: rotate(45deg);
+      top: -5px;
+    }
+
+    &:after {
+      top: 4px;
+      transform: rotate(-45deg);
+    }
+
+  }
+}

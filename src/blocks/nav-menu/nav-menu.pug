@@ -1,0 +1,24 @@
+mixin nav-menu(arrItems, position= "header", title = "")
+  nav(class="nav-menu-" + position)
+    ul(class="nav-menu-" + position + "__list")
+      case position
+        when "header"
+          each item in arrItems
+            case true
+              when item.isDrop
+                li.nav-menu-header__item
+                  a(href="#").nav-menu-header__link.nav-menu-header__link_is-drop_true= item.item
+
+              when item.isActive
+                li.nav-menu-header__item
+                  a(href="#").nav-menu-header__link.nav-menu-header__link_activ_true= item.item
+
+              default
+                li.nav-menu-header__item
+                  a(href="#").nav-menu-header__link= item.item
+
+        when "footer"
+          h3.nav-menu-footer__item-title= title
+          each item in arrItems
+            li.nav-menu-footer__item
+              a(href="#").nav-menu-footer__link= item.item

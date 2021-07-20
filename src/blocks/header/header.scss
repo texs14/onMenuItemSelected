@@ -1,0 +1,55 @@
+.header {
+  display: flex;
+  align-items: center;
+
+  padding: 15px 140px;
+
+  background: #fff;
+  box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
+
+  &__wrapper-button {
+    display: flex;
+  }
+
+  &__button-singup, &__buttton-login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    height: 34px;
+
+    font-size: 12px;
+    line-height: 15px;
+    text-transform: uppercase;
+
+    border-radius: 22px;
+  }
+
+  &__buttton-login {
+    border: 2px solid;
+    border: 2px solid linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+
+    width: 87px;
+
+    margin-right: 20px;
+
+    color: $second-text-color;
+  }
+
+  &__button-singup {
+    width: 196px;
+
+    background: $primary-ui-color;
+
+    color: #fff;
+  }
+
+  .nav-menu-header {
+    margin-left: auto;
+    margin-right: 45px;
+  }
+
+  &__nickname {
+    @include primary-font-view(.5)
+  }
+}

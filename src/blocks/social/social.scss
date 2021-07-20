@@ -1,0 +1,27 @@
+.social {
+  display: flex;
+  &__item {
+    width: 24px;
+    height: 24px;
+
+    margin-right: 20px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    &_icon{
+      &_twit {
+        background: url("../assets/images/twit-icon.svg") center / 100% no-repeat;
+      }
+
+      &_fb {
+        background: url("../assets/images/fb-icon.svg") center / 100% no-repeat;
+      }
+
+      &_inst {
+        background: url("../assets/images/inst-icon.svg") center / 100% no-repeat;
+      }
+    }
+  }
+}
