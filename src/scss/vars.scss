@@ -1,11 +1,12 @@
 $primary-text-color: #1F2041;
 $second-text-color: #BC9CFF;
-$primary-ui-color: #BC9CFF;
+$primary-ui-color: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);;
 $second-ui-color: #6FCF97;
 
-@mixin primary-font-view ($opacity: 1, $isBold: false) {
+@mixin primary-font-view ($opacity: 1, $isBold: false, $font-size: 14px) {
   color: $primary-text-color;
   opacity: $opacity;
+  font-size: $font-size;
   @if $isBold == false {
     font-family: Montserrat-Regular;
   } @if $isBold == true {
