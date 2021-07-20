@@ -3,11 +3,18 @@
 @import "./normalize.scss";
 @import "../assets/fonts/fonts.scss";
 
-@import "./templates.scss";
+@import "../pug/templates/base/templates.scss";
 
 @import "../pages/ui-kit/colors-and-type/colors-and-type.scss";
+@import "../pages/ui-kit/header-and-footer/header-and-footer.scss";
+@import "../pages/ui-kit/form-elements/form-elements.scss";
 
 @import "../blocks/color-block/color-block.scss";
 @import "../blocks/card-of-room/card-of-room.scss";
-@import "../blocks/title-block/title-block";
-
+@import "../blocks/title-block/title-block.scss";
+@import "../blocks/logo/logo.scss";
+@import "../blocks/nav-menu/nav-menu.scss";
+@import "../blocks/header/header.scss";
+@import "../blocks/footer/footer.scss";
+@import "../blocks/subscribe/subscribe.scss";
+@import "../blocks/social/social.scss";
