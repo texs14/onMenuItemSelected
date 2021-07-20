@@ -29,8 +29,16 @@ module.exports = {
             template: path.relative(__dirname, './src/index.pug'),
         }),
         new HtmlWebpackPlugin({
-            filename: "pages/ui-kit--colors-and-type.html",
+            filename: "pages/ui-kit/colors-and-type.html",
             template: path.relative(__dirname, './src/pages/ui-kit/colors-and-type/colors-and-type.pug'),
+        }),
+        new HtmlWebpackPlugin({
+            filename: "pages/ui-kit/header-and-footer.html",
+            template: path.relative(__dirname, './src/pages/ui-kit/header-and-footer/header-and-footer.pug'),
+        }),
+        new HtmlWebpackPlugin({
+            filename: "pages/ui-kit/form-elements.html",
+            template: path.relative(__dirname, './src/pages/ui-kit/form-elements/form-elements.pug'),
         }),
         new CleanWebpackPlugin(),
         new webpack.HotModuleReplacementPlugin(),
