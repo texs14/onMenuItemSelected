@@ -1,3 +1,24 @@
+/* Мои стили */
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+h2, h3, h4, h5, h6 {
+  font-family: Montserrat-Bold;
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 
 /* Document
@@ -44,14 +65,6 @@ h1 {
   margin: 0;
 }
 
-h2, h3, h4, h5, h6 {
-  font-family: Montserrat-Bold;
-  margin: 0;
-}
-
-p {
-  margin: 0;
-}
 
 /* Grouping content
    ========================================================================== */
