@@ -1,0 +1,12 @@
+extends ../../../pug/templates/base/base
+include ../../../blocks/header/header
+include ../../../blocks/footer/footer
+block title
+  title= "header-and-footer"
+
+block content
+  main.header-and-footer
+    +header([{item: "О нас", isActive: true}, {item: "Услуги", isDrop: true}, {item: "Вакансии"}, {item: "Новости"}, {item: "Соглашения", isDrop: true}])
+    +header([{item: "О нас", isActive: true}, {item: "Услуги", isDrop: true}, {item: "Вакансии"}, {item: "Новости"}, {item: "Соглашения", isDrop: true}], true, "Юлий Цезарь")
+    +footer()
+    +footer(true)
